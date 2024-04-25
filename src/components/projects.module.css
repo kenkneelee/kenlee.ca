@@ -1,0 +1,32 @@
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.projects {
+  width: 100vw;
+  background-color: rgba(67, 67, 67, 0.56);
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3rem;
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+.projectCard {
+  background-color:#151722;
+  color: aliceblue;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+.projectsContainer button {
+  background-color: grey;
+}
