@@ -8,13 +8,13 @@ const theme = createTheme({
       main: '#dbdbdb', // Custom primary color
     },
     secondary: {
-      main: '#dc004e', // Custom secondary color
+      main: '#dbdbdb', // Custom secondary color
     },
     // Add more customizations as needed
   },
   typography: {
     // Define custom typography settings
-    fontFamily: 'Roboto, sans-serif',
+  fontFamily: 'Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif',
     fontSize: 16,
   },
   // Add additional theme configurations here
