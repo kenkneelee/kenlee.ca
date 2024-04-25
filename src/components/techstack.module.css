@@ -1,0 +1,39 @@
+.stackContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.stack {
+  width: 100vw;
+  background-color: rgba(67, 67, 67, 0.56);
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3rem;
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+.techBox {
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.techImg {
+  height: 100%;
+  width: 100%;
+
+}
+
+.techImg:hover {
+  transform: scale(1.5);
+  transition: transform 250ms,
+}
