@@ -40,10 +40,10 @@ const Header = () => {
           </Button>
         </Box>
 
-        <Button href="/testRoute">
+        {/* <Button href="/testRoute">
           About Me
-        </Button>
-        <Button>Projects</Button>
+        </Button> */}
+        <Button href="#Projects">Projects</Button>
         <Box className={styles.socials}>
           <Button href="https://github.com/kenkneelee">
             <GitHubIcon></GitHubIcon>
@@ -51,9 +51,9 @@ const Header = () => {
           <Button href="https://www.linkedin.com/in/kenny-lee-/">
             <LinkedInIcon></LinkedInIcon>
           </Button>
-          <Button>
+          {/* <Button>
             <EmailIcon></EmailIcon>
-          </Button>
+          </Button> */}
         </Box>
       </Toolbar>
     </AppBar>
