@@ -20,7 +20,7 @@ const Hero = () => {
           Hi! I&apos;m <Link href="https://github.com/kenkneelee">Kenny.</Link>
         </Typography>
         <Typography variant="subtitle1" id="bodytext">
-          I'm a passionate and creative full-stack web developer based in
+          I&apos;m a passionate and creative full-stack web developer based in
           Toronto. I specialize in crafting modern, responsive, and
           user-friendly websites and applications that leave a lasting
           impression. My goal is to create seamless digital experiences that not
