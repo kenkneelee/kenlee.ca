@@ -188,7 +188,7 @@ const Projects = () => {
                   component="img"
                   alt="Odin Tic Tac Toe preview"
                   height="140"
-                  image="https://private-user-images.githubusercontent.com/89105909/325483645-e374524e-24f8-419e-9057-be20e6ae6cd4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQwMjMxNDAsIm5iZiI6MTcxNDAyMjg0MCwicGF0aCI6Ii84OTEwNTkwOS8zMjU0ODM2NDUtZTM3NDUyNGUtMjRmOC00MTllLTkwNTctYmUyMGU2YWU2Y2Q0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA0MjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNDI1VDA1MjcyMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNmZDRkZDhkNzU5NmIwODc5MTRmZTlhZDM1Mzc2MDU3MmNiZjgwNjQ2N2JmOGZhYmY1MDRhMTU4NDYzNWNkNWQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.Cf55ZdNIlAgYUlEq-IZTQiGFsBohHLGM-a7Mq3z8Vks"
+                  image="/tictactoe.png"
                 />
                 <CardContent className={styles.cardContent}>
                   <Typography gutterBottom variant="h5" component="div">
@@ -234,7 +234,7 @@ const Projects = () => {
                   component="img"
                   alt="Tweeter preview"
                   height="140"
-                  image="https://private-user-images.githubusercontent.com/89105909/325485267-b611ae6b-14c4-4a16-83b2-ea47cdb29d6d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQwMjM2MDAsIm5iZiI6MTcxNDAyMzMwMCwicGF0aCI6Ii84OTEwNTkwOS8zMjU0ODUyNjctYjYxMWFlNmItMTRjNC00YTE2LTgzYjItZWE0N2NkYjI5ZDZkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA0MjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNDI1VDA1MzUwMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTZkZDU5NTRiOGNkNmMwYjI3NWNmMDRlYWJkMzI1OTJiYzZjYjI3NTlkMzlmMjU1MmM3MWY4MWFhYjJkNWFlZWYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.4UarAN2SdjKSV22Eoa_tSoQBnwv91Q7fXwHeTrFqRzg"
+                  image="/etchasketch.png"
                 />
                 <CardContent className={styles.cardContent}>
                   <Typography gutterBottom variant="h5" component="div">
