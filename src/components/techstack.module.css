@@ -9,6 +9,7 @@
 
 .stack {
   width: 100vw;
+  height: 200px;
   background-color: rgba(67, 67, 67, 0.56);
   display:flex;
   align-items: center;
@@ -30,7 +31,6 @@
 .techImg {
   height: 100%;
   width: 100%;
-
 }
 
 .techImg:hover {
