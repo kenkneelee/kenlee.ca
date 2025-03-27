@@ -10,23 +10,52 @@
 .projects {
   width: 100vw;
   background-color: rgba(67, 67, 67, 0.56);
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-evenly;
   gap: 3rem;
   padding: 2.5rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
-
 }
 
 .projectCard {
-  background-color:#151722;
+  background-color: #151722;
   color: aliceblue;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-
 }
 
 .projectsContainer button {
   background-color: grey;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 0;
+  }
+  .timelineItem {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .timelineItemLabel {
+    width: 100%;
+  }
+
+  .timelineSeparator {
+    display: none;
+  }
+
+  .projectCard {
+    margin: auto;
+    width: 100%;
+  }
+
+  .cardActions {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 500px) {
 }

@@ -28,6 +28,54 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 
+const projectData = [
+  {
+    date: "Feb 2024",
+    title: "Lighthouse Labs Bootcamp - Final Project",
+    name: "GoForage",
+    desc: "My final bootcamp group project, GoForage is a fullstack web app made using PostgreSQL, Express, React, and Node. It is designed to demystify mushroom foraging and foster a thriving community of enthusiasts.",
+    image: "https://github.com/emilyem1/go-forage/blob/main/frontend/public/images/Search.png?raw=true",
+    repo: "https://github.com/emilyem1/go-forage",
+    live: "",
+  },
+  {
+    date: "Oct 2023",
+    title: "Lighthouse Labs Bootcamp - Midterm Project",
+    name: "Programmer.com",
+    desc: "My midterm bootcamp group project, Programmer is a full stack web application built with Express, Node, and PostgreSQL that connects buyers and sellers of tech-services and skills.",
+    image: "https://github.com/kenkneelee/LHL-midterm-programmer.com/raw/master/docs/home_page.png",
+    repo: "https://github.com/kenkneelee/LHL-midterm-programmer.com",
+    live: "",
+  },
+  {
+    date: "Sep 2023",
+    title: "Lighthouse Labs Bootcamp - Project",
+    name: "Tweeter",
+    desc: "Tweeter is a simple, single-page Twitter clone. This project was built on a starter repository with server-side code pre-written. It provided practice for responsive design using HTML and CSS, and client-side javascript (including form handling, serialization, XSS, jQuery).",
+    image: "https://github.com/kenkneelee/tweeter/raw/master/docs/responsive.gif",
+    repo: "https://github.com/kenkneelee/tweeter",
+    live: "",
+  },
+  {
+    date: "Jun 2022",
+    title: "The Odin Project - Assignment",
+    name: "Odin Tic Tac Toe",
+    desc: "A tictactoe game featuring unbeatable AI using the minmax algorithm.",
+    image: "/tictactoe.png",
+    repo: "https://github.com/kenkneelee/odin-tictactoe",
+    live: "https://kenkneelee.github.io/odin-tictactoe/",
+  },
+  {
+    date: "Dec 2021",
+    title: "The Odin Project - Assignment",
+    name: "Odin Etch-a-Sketch",
+    desc: "A simple webapp etch-a-sketch made to practice DOM manipulation and CSS hover effects.",
+    image: "/etchasketch.png",
+    repo: "https://github.com/kenkneelee/odin-etch-a-sketch",
+    live: "https://kenkneelee.github.io/odin-etch-a-sketch/",
+  },
+];
+
 const Projects = () => {
   return (
     <Box className={styles.projectsContainer} id="Projects">
@@ -35,233 +83,58 @@ const Projects = () => {
 
       <Box className={styles.projects}>
         <Timeline position="alternate">
-          <TimelineItem>
-            <TimelineOppositeContent color="#dbdbdb">
-              <Box>
-                <Typography variant="h4">Feb 2024</Typography>
-                <Typography variant="h5">
-                  Lighthouse Labs Bootcamp - Final Project
-                </Typography>
-              </Box>
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineDot />
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>
-              <Card className={styles.projectCard} sx={{ width: "60%", mr: 1 }}>
-                <CardMedia
-                  component="img"
-                  alt="GoForage preview"
-                  height="140"
-                  image="https://github.com/emilyem1/go-forage/blob/main/frontend/public/images/Search.png?raw=true"
-                />
-                <CardContent className={styles.cardContent}>
-                  <Typography gutterBottom variant="h5" component="div">
-                    GoForage
-                  </Typography>
-                  <Typography variant="body2">
-                    GoForage is a fullstack web app made using PostgreSQL,
-                    Express, React, and Node. It is designed to demystify
-                    mushroom foraging and foster a thriving community of
-                    enthusiasts.
-                  </Typography>
-                </CardContent>
-                <CardActions sx={{ padding: "1rem" }}>
-                  <Button
-                    size="small"
-                    href="https://github.com/emilyem1/go-forage"
-                  >
-                    View Repo
-                  </Button>
-                </CardActions>
-              </Card>
-            </TimelineContent>
-          </TimelineItem>
 
-          <TimelineItem>
-            <TimelineOppositeContent color="#dbdbdb">
-              <Box>
-                <Typography variant="h4">Oct 2023</Typography>
-                <Typography variant="h5">
-                  Lighthouse Labs Bootcamp - Midterm Project
-                </Typography>
-              </Box>
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineDot />
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>
-              <Card
-                className={styles.projectCard}
-                sx={{ width: "60%", marginLeft: "auto" }}
-              >
-                <CardMedia
-                  component="img"
-                  alt="Programmer.com preview"
-                  height="140"
-                  image="https://github.com/kenkneelee/LHL-midterm-programmer.com/raw/master/docs/home_page.png"
-                />
-                <CardContent className={styles.cardContent}>
-                  <Typography gutterBottom variant="h5" component="div">
-                    Programmer.com
+          {projectData.map((project, index) => (
+            <TimelineItem key={index} className={styles.timelineItem}>
+              <TimelineOppositeContent className={styles.timelineItemLabel}>
+                <Box>
+                  <Typography variant="h4">{project.date}</Typography>
+                  <Typography variant="h5">
+                    {project.title}
                   </Typography>
-                  <Typography variant="body2">
-                    Programmer is a full stack web application built with
-                    Express, Node and PostgreSQL that connects buyers and sellers
-                    of tech-services and skills.
-                  </Typography>
-                </CardContent>
-                <CardActions sx={{ padding: "1rem", justifyContent: "right" }}>
-                  <Button
-                    size="small"
-                    href="https://github.com/kenkneelee/LHL-midterm-programmer.com"
-                  >
-                    View Repo
-                  </Button>
-                </CardActions>
-              </Card>
-            </TimelineContent>
-          </TimelineItem>
+                </Box>
+              </TimelineOppositeContent>
+              <TimelineSeparator className={styles.timelineSeparator}>
+                <TimelineDot />
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent>
+                <Card className={styles.projectCard} sx={{ width: "100%", marginLeft: index % 2 === 0 ? "0" : "auto", marginRight: index % 2 === 0 ? "auto" : 0 }}>
+                  <CardMedia
+                    component="img"
+                    alt={project.name + " preview"}
+                    height="140"
+                    image={project.image}
+                  />
+                  <CardContent className={styles.cardContent}>
+                    <Typography gutterBottom variant="h5" component="div">
+                      {project.name}
+                    </Typography>
+                    <Typography variant="body2">
+                      {project.desc}
+                    </Typography>
+                  </CardContent>
+                  <CardActions className={styles.cardActions} sx={{ padding: "1rem", justifyContent: index % 2 === 0 ? "flex-start" : "flex-end", }}>
+                    <Button
+                      size="small"
+                      href={project.repo}
+                    >
+                      View Repo
+                    </Button>
+                    {project.live && (
+                      <Button
+                        size="small"
+                        href={project.live}
+                      >
+                        Live Preview
+                      </Button>
+                    )}
+                  </CardActions>
+                </Card>
+              </TimelineContent>
+            </TimelineItem>
+          ))}
 
-          <TimelineItem>
-            <TimelineOppositeContent color="#dbdbdb">
-              <Box>
-                <Typography variant="h4">Sep 2023</Typography>
-                <Typography variant="h5">Lighthouse Labs Bootcamp - Project</Typography>
-              </Box>
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineDot />
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>
-              <Card className={styles.projectCard} sx={{ width: "60%" }}>
-                <CardMedia
-                  component="img"
-                  alt="Tweeter preview"
-                  height="140"
-                  image="https://github.com/kenkneelee/tweeter/raw/master/docs/responsive.gif"
-                />
-                <CardContent className={styles.cardContent}>
-                  <Typography gutterBottom variant="h5" component="div">
-                    Tweeter
-                  </Typography>
-                  <Typography variant="body2">
-                    Tweeter is a simple, single-page Twitter clone. This project
-                    was built on a starter repository with server-side code
-                    pre-written. It provided practice for responsive design
-                    using HTML and CSS, and client-side javascript (including
-                    form handling, serialization, XSS, jQuery).
-                  </Typography>
-                </CardContent>
-                <CardActions sx={{ padding: "1rem" }}>
-                  <Button
-                    size="small"
-                    href="https://github.com/kenkneelee/tweeter"
-                  >
-                    View Repo
-                  </Button>
-                </CardActions>
-              </Card>
-            </TimelineContent>
-          </TimelineItem>
-
-          <TimelineItem>
-            <TimelineOppositeContent color="#dbdbdb">
-              <Box>
-                <Typography variant="h4">Jun 2022</Typography>
-                <Typography variant="h5">The Odin Project - Assignment</Typography>
-              </Box>
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineDot />
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>
-              <Card
-                className={styles.projectCard}
-                sx={{ width: "60%", marginLeft: "auto" }}
-              >
-                <CardMedia
-                  component="img"
-                  alt="Odin Tic Tac Toe preview"
-                  height="140"
-                  image="/tictactoe.png"
-                />
-                <CardContent className={styles.cardContent}>
-                  <Typography gutterBottom variant="h5" component="div">
-                    Odin Tic Tac Toe
-                  </Typography>
-                  <Typography variant="body2">
-                    A tictactoe game featuring unbeatable AI using the minmax
-                    algorithm.
-                  </Typography>
-                </CardContent>
-                <CardActions sx={{ padding: "1rem", justifyContent: "right" }}>
-                  <Button
-                    size="small"
-                    href="https://github.com/kenkneelee/odin-tictactoe"
-                  >
-                    View Repo
-                  </Button>
-                  <Button
-                    size="small"
-                    href="https://kenkneelee.github.io/odin-tictactoe/"
-                  >
-                    Live Preview
-                  </Button>
-                </CardActions>
-              </Card>
-            </TimelineContent>
-          </TimelineItem>
-
-          <TimelineItem>
-            <TimelineOppositeContent color="#dbdbdb">
-              <Box>
-                <Typography variant="h4">Dec 2021</Typography>
-                <Typography variant="h5">The Odin Project - Assignment</Typography>
-              </Box>
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineDot />
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>
-              <Card className={styles.projectCard} sx={{ width: "60%" }}>
-                <CardMedia
-                  component="img"
-                  alt="Tweeter preview"
-                  height="140"
-                  image="/etchasketch.png"
-                />
-                <CardContent className={styles.cardContent}>
-                  <Typography gutterBottom variant="h5" component="div">
-                    Odin Etch-a-Sketch
-                  </Typography>
-                  <Typography variant="body2">
-                    A simple webapp etch-a-sketch made to practice DOM
-                    manipulation and CSS hover effects.
-                  </Typography>
-                </CardContent>
-                <CardActions sx={{ padding: "1rem" }}>
-                  <Button
-                    size="small"
-                    href="https://github.com/kenkneelee/odin-etch-a-sketch"
-                  >
-                    View Repo
-                  </Button>
-                  <Button
-                    size="small"
-                    href="https://kenkneelee.github.io/odin-etch-a-sketch/"
-                  >
-                    Live Preview
-                  </Button>
-                </CardActions>
-              </Card>
-            </TimelineContent>
-          </TimelineItem>
         </Timeline>
       </Box>
     </Box>
