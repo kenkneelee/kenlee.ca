@@ -3,25 +3,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 2rem;
   padding: 2rem;
 }
 
 .stack {
-  width: 100vw;
-  height: 200px;
+  width: 100%;
   background-color: rgba(67, 67, 67, 0.56);
   display:flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   gap: 3rem;
   padding: 2.5rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
-
 }
 
 .techBox {
-  height: 100%;
+  height: 10rem;
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -36,4 +36,16 @@
 .techImg:hover {
   transform: scale(1.5);
   transition: transform 250ms,
+}
+
+@media (max-width: 768px) {
+  .stack {
+    /* flex-direction: column;  */
+    gap: 1rem; 
+    padding: 1.5rem; 
+  }
+  .techBox {
+    height: 5rem;
+    width: 5rem;
+  }
 }
