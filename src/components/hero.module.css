@@ -28,6 +28,9 @@
   .heroIntro {
     font-size: 1.8rem;
   }
+  .heroText:hover {
+    transform: none;
+  }
 }
 
 @media (max-width: 500px) {
