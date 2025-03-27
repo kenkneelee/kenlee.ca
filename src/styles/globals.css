@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 * {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   scroll-behavior: smooth;
-
+  /* outline: 1px solid red; Helps you see which elements are too big */
 }
 
 :root {
@@ -24,7 +24,14 @@
 
 body {
   background: #151722;
-  color:aliceblue;
+  color: aliceblue;
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 500px) {
 }
 
 @layer utilities {
