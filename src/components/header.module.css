@@ -9,7 +9,28 @@
   text-transform: none;
 }
 
-.socials {
+.navLinks {
   display: flex;
+  align-items: center;
   gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .headerContainer {
+    padding: 1rem;
+  }
+
+  .logoName {
+    font-size: 1.2rem; 
+  }
+
+  .headerContainer {
+    padding: 0.5rem 1rem; 
+  }
+}
+
+@media (max-width: 500px) {
+  .logoName {
+    font-size: 1rem; 
+  }
 }

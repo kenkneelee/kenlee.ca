@@ -26,7 +26,7 @@ const Header = () => {
       position="static"
       color="primary"
     >
-      <Toolbar sx={{ gap: "2rem" }}>
+      <Toolbar>
         <Box sx={{ flexGrow: 1 }}>
           <Button className={styles.logoButton} href="/">
             <Box>
@@ -40,20 +40,14 @@ const Header = () => {
           </Button>
         </Box>
 
-        {/* <Button href="/testRoute">
-          About Me
-        </Button> */}
-        <Button href="#Projects">Projects</Button>
-        <Box className={styles.socials}>
+        <Box className={styles.navLinks}>
+          <Button href="#Projects">Projects</Button>
           <Button href="https://github.com/kenkneelee">
             <GitHubIcon></GitHubIcon>
           </Button>
           <Button href="https://www.linkedin.com/in/kenny-lee-/">
             <LinkedInIcon></LinkedInIcon>
           </Button>
-          {/* <Button>
-            <EmailIcon></EmailIcon>
-          </Button> */}
         </Box>
       </Toolbar>
     </AppBar>
