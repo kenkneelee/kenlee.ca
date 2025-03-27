@@ -16,8 +16,8 @@ const Hero = () => {
   return (
     <Box className={styles.hero}>
       <Box className={styles.heroText}>
-        <Typography variant="h4">
-          Hi! I&apos;m <Link href="https://github.com/kenkneelee">Kenny.</Link>
+        <Typography variant="h4" className={styles.heroIntro}>
+          Hi! I&apos;m <Link href="https://www.linkedin.com/in/kenny-lee-/">Kenny.</Link>
         </Typography>
         <Typography variant="subtitle1" id="bodytext">
           I&apos;m a passionate and creative full-stack web developer based in
@@ -30,20 +30,7 @@ const Hero = () => {
           projects. Let&apos;s collaborate and turn your ideas into reality!
         </Typography>
       </Box>
-      <Box sx={{display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
-        <Box
-          component="img"
-          sx={{
-            width: "25vw",
-            height: "25vw",
-          }}
-          alt="Generic web development vector image."
-          src="/webdevelopment.svg"
-        />
-        <span>
-        Image by <Link href="https://www.freepik.com/">Freepik</Link>
-        </span>
-      </Box>
+
     </Box>
   );
 };

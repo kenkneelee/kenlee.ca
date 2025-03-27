@@ -7,8 +7,12 @@
 
 }
 
+.heroIntro {
+  font-size: 2.5rem;
+}
+
 .heroText {
-  width: 40vw;
+  width: 90%;
   background-color: rgba(67, 67, 67, 0.26);
   padding: 2rem;
   border-radius: 30px;
@@ -18,4 +22,16 @@
 
 .heroText:hover {
   transform: scale(1.1) translateY(-5%);
+}
+
+@media (max-width: 768px) {
+  .heroIntro {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .heroIntro {
+    font-size: 1.2rem;
+  }
 }
