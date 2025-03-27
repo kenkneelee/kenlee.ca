@@ -41,7 +41,7 @@ const Header = () => {
         </Box>
 
         <Box className={styles.navLinks}>
-          <Button href="#Projects">Projects</Button>
+          <Button href="#Projects" className={styles.projectsButton}>Projects</Button>
           <Button href="https://github.com/kenkneelee">
             <GitHubIcon></GitHubIcon>
           </Button>
