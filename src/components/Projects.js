@@ -30,6 +30,15 @@ import CardMedia from "@mui/material/CardMedia";
 
 const projectData = [
   {
+    date: "April 2025",
+    title: "Vanilla HTML/CSS/JS - Practice",
+    name: "Quizlify",
+    desc: "A simple quiz web app built with vanilla HTML, CSS, and JavaScript. This project was a chance to practice working with APIs, responsive layout, and basic front-end logic & design.",
+    image: "/quizlify.png",
+    repo: "https://github.com/kenkneelee/quizlify",
+    live: "https://kenkneelee.github.io/quizlify/"
+  },
+  {
     date: "Feb 2024",
     title: "Lighthouse Labs Bootcamp - Final Project",
     name: "GoForage",
